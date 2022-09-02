@@ -50,10 +50,9 @@ describe Solver do
       expect(result).to eq 'fizzbuzz'
     end
 
-    it "Return interger as string if not divible by 3 nor 5" do
+    it 'Return interger as string if not divible by 3 nor 5' do
       result = @solver.fizzbuzz(7)
       expect(result).to eq '7'
     end
   end
-
 end
