@@ -27,4 +27,12 @@ describe Solver do
     end
   end
 
+  describe '#reverse' do
+    it 'Reverse string method' do
+      result = @solver.reverse('jane')
+      expect(result).to eq 'enaj'
+    end
+  end
+
+
 end
