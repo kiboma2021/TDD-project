@@ -34,5 +34,26 @@ describe Solver do
     end
   end
 
+  describe '#fizzbuzz' do
+    it 'Return fizz if value is divible by 3' do
+      result = @solver.fizzbuzz(3)
+      expect(result).to eq 'fizz'
+    end
+
+    it 'Return buzz if value is divible by 5' do
+      result = @solver.fizzbuzz(5)
+      expect(result).to eq 'buzz'
+    end
+
+    it 'Return fizzbuzz if input is divible by 3 and 5' do
+      result = @solver.fizzbuzz(15)
+      expect(result).to eq 'fizzbuzz'
+    end
+
+    it "Return interger as string if not divible by 3 nor 5" do
+      result = @solver.fizzbuzz(7)
+      expect(result).to eq '7'
+    end
+  end
 
 end
